@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 100vh;
+    margin-top: 8%;
+    margin-right: 15%;
+    background-image: url(https://images.unsplash.com/photo-1506968430777-bf7784a87f23?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.image-container {
+    /* text-align: center; */
+    /* Center the image horizontally within the container */
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 5px;
+    margin-left: 30px;
+    margin-right: 100px;
+    /* Add top margin */
+}
+
+.styled-image {
+    width: 400px;
+    /* Set width */
+    height: 500px;
+    /* Maintain aspect ratio */
+    border-radius: 10px;
+    /* Rounded corners */
+    border: 5px solid #ddd;
+    /* Add a solid border */
+}
+
+.container {
+    background-color: rgb(203, 139, 99);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    align-items: flex-end;
+}
+
+h1 {
+    text-align: left;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    color: black;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#task-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+#add-task-btn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#add-task-btn:hover {
+    background-color: #218838;
+}
+
+#task-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+.task-item.completed .task-text {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.task-item .task-text {
+    flex-grow: 1;
+}
+
+.task-item button {
+    margin-left: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.edit-btn {
+    color: #007bff;
+}
+
+.edit-btn:hover {
+    color: #0056b3;
+}
+
+.delete-btn {
+    color: #dc3545;
+}
+
+.delete-btn:hover {
+    color: #c82333;
+}
